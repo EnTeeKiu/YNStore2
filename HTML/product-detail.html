@@ -12,40 +12,34 @@
 <body>
     <div class="navbar">
         <div class="nav-links">
-            <a href="home.html">Trang chủ</a>
-            <a href="products.html">Sản phẩm</a>
-            <a href="product-detail.html">Chi tiết sp</a>
-            <a href="contact.html">Liên hệ</a>
-            <a href="index.html">Đăng nhập</a>
+            <a href="home.html">Dashboard</a>
+            <a href="products.html">Quản lý sản phẩm</a>
+            <a href="contact.html">Hỗ trợ Kỹ thuật</a>
+            <a href="index.html">Đăng xuất</a>
         </div>
     </div>
     <div id="wrapper">
         <div class="page-content">
-            <h1>Chi tiết Sản phẩm 1</h1>
-            <img src="../Product Image/1.jpg" alt="Sản phẩm 1" style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
-            <p>Mô tả chi tiết cho sản phẩm 1. Đây là một sản phẩm rất đẹp và chất lượng, phù hợp với mọi nhu cầu của
-                bạn.</p>
-            <div class="product-price" style="font-size: 24px;">100.000 VNĐ</div>
-            <a href="#" class="form-submit" style="display:inline-block; text-decoration:none; margin-top: 20px;"
-                onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ hàng</a>
-
-            <hr style="margin: 40px 0; border: 1px solid #ff8fd0;">
-
-            <h1>Chi tiết Sản phẩm 2</h1>
-            <img src="../Product Image/2.jpg" alt="Sản phẩm 2" style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
-            <p>Mô tả chi tiết cho sản phẩm 2. Thiết kế độc đáo và màu sắc tươi sáng, đem lại trải nghiệm tuyệt vời khi sử dụng.</p>
-            <div class="product-price" style="font-size: 24px;">150.000 VNĐ</div>
-            <a href="#" class="form-submit" style="display:inline-block; text-decoration:none; margin-top: 20px;"
-                onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ hàng</a>
-
-            <hr style="margin: 40px 0; border: 1px solid #ff8fd0;">
-
-            <h1>Chi tiết Sản phẩm 3</h1>
-            <img src="../Product Image/3.jpg" alt="Sản phẩm 3" style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
-            <p>Mô tả chi tiết cho sản phẩm 3. Sự lựa chọn hoàn hảo dành cho những người yêu thích sự đơn giản và tinh tế.</p>
-            <div class="product-price" style="font-size: 24px;">200.000 VNĐ</div>
-            <a href="#" class="form-submit" style="display:inline-block; text-decoration:none; margin-top: 20px;"
-                onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ hàng</a>
+            <form action="" id="form-edit-product" style="max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h1 class="form-heading" style="text-align: center; color: #ff8fd0; margin-bottom: 20px;">Chỉnh sửa Sản phẩm</h1>
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <img src="../Product Image/croissant.jpg" alt="Preview" style="width: 200px; height: 200px; object-fit: cover; border-radius: 10px; border: 2px solid #ff8fd0;">
+                </div>
+                <div class="form-group" style="border-bottom: 1px solid #ff8fd0; margin-bottom: 15px; display: flex;">
+                    <input type="text" class="form-input" placeholder="Tên sản phẩm" value="Smiling Croissant">
+                </div>
+                <div class="form-group" style="border-bottom: 1px solid #ff8fd0; margin-bottom: 15px; display: flex;">
+                    <input type="text" class="form-input" placeholder="Giá" value="$24.99">
+                </div>
+                <div class="form-group" style="border-bottom: 1px solid #ff8fd0; margin-bottom: 15px; display: flex;">
+                    <input type="text" class="form-input" placeholder="Hình ảnh URL" value="croissant.jpg">
+                </div>
+                <div class="form-group" style="border-bottom: 1px solid #ff8fd0; margin-bottom: 15px; display: flex;">
+                    <textarea class="form-input" placeholder="Mô tả" style="resize:none; height: 80px; width: 100%;">A buttery soft friend to start your day.</textarea>
+                </div>
+                <input type="submit" value="Lưu thay đổi" class="form-submit" onclick="alert('Đã lưu thành công!'); window.location.href='products.html'; event.preventDefault();">
+                <a href="products.html" class="form-submit" style="display:block; text-align:center; text-decoration:none; background-color: #ccc; border-color: #ccc; margin-top: 10px; color: #333;">Hủy bỏ</a>
+            </form>
         </div>
     </div>
 </body>
